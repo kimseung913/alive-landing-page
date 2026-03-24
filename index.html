@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="살았니(Alive) - 1인 가구 안전 생존신고 서비스. 무소식이 희소식이다.">
+    <meta name="keywords" content="1인가구, 안전, 생존신고, 안심서비스, 보호자알림">
+    <title>살았니(Alive) - 1인 가구 안전 생존신고 서비스</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <a href="#" class="logo">
+                <span class="logo-icon">
+                    <svg viewBox="0 0 100 120" fill="none" xmlns="http://www.w3.org/2000/svg" width="36" height="43">
+                        <!-- Gat (Korean Hat) -->
+                        <ellipse cx="50" cy="25" rx="35" ry="8" fill="#343A40" opacity="0.9" />
+                        <path d="M30 25 L35 10 L65 10 L70 25" fill="#343A40" opacity="0.9" />
+                        <rect x="35" y="5" width="30" height="8" rx="2" fill="#343A40" />
+                        <!-- Ghost Body -->
+                        <path
+                            d="M25 45 C25 30 35 25 50 25 C65 25 75 30 75 45 L75 100 C75 100 70 95 65 100 C60 105 55 95 50 100 C45 105 40 95 35 100 C30 105 25 95 25 100 Z"
+                            fill="#8B4557" />
+                        <path d="M30 45 C30 35 38 30 50 30 C62 30 70 35 70 45 L70 95" fill="#A85C6F" opacity="0.5" />
+                        <!-- Happy Face -->
+                        <path d="M35 55 Q40 50 45 55" stroke="#ffffff" stroke-width="2.5" fill="none"
+                            stroke-linecap="round" />
+                        <path d="M55 55 Q60 50 65 55" stroke="#ffffff" stroke-width="2.5" fill="none"
+                            stroke-linecap="round" />
+                        <path d="M40 70 Q50 78 60 70" stroke="#ffffff" stroke-width="2.5" fill="none"
+                            stroke-linecap="round" />
+                        <circle cx="32" cy="62" r="5" fill="#FFB8B8" opacity="0.6" />
+                        <circle cx="68" cy="62" r="5" fill="#FFB8B8" opacity="0.6" />
+                        <!-- Hanbok collar -->
+                        <path d="M42 85 L50 95 L58 85" stroke="white" stroke-width="3" fill="none"
+                            stroke-linecap="round" />
+                    </svg>
+                </span>
+                <span class="logo-text">살았니<span class="logo-sub">(Alive)</span></span>
+            </a>
+            <nav class="nav">
+                <a href="#about" class="nav-link">서비스 소개</a>
+                <a href="#features" class="nav-link">주요 기능</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-badges">
+                    <span class="hero-tagline">1인 가구 안전 생존신고 서비스</span>
+                </div>
+                <h1 class="hero-title">
+                    <span class="hero-highlight">"무소식이 희소식이다."</span>
+                </h1>
+                <p class="hero-description">
+                    혼자 사는 당신의 안전을 지켜드립니다.<br>
+                    매일 한 번, 살았니? 버튼 하나로 가족에게 안심을.
+                </p>
+                <div class="store-buttons">
+                    <a href="https://play.google.com/store/apps/details?id=com.btsoft.aliveapp" target="_blank" rel="noopener noreferrer" class="store-btn google-play">
+                        <svg class="store-icon" viewBox="0 0 24 24" fill="currentColor" width="24" height="24">
+                            <path d="M3.609 1.814L13.792 12 3.61 22.186a.996.996 0 0 1-.61-.92V2.734a1 1 0 0 1 .609-.92zm10.89 10.893l2.302 2.302-10.937 6.333 8.635-8.635zm3.199-3.199l2.302 2.302-2.302 2.302-2.774-2.774 2.774-2.83zM5.864 2.658L16.8 8.99l-2.302 2.302-8.634-8.634z"/>
+                        </svg>
+                        <span class="store-name">Google Play</span>
+                    </a>
+                    <button type="button" class="store-btn app-store" id="iosBtn">
+                        <svg class="store-icon" viewBox="0 0 24 24" fill="currentColor" width="24" height="24">
+                            <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/>
+                        </svg>
+                        <span class="store-name">App Store</span>
+                    </button>
+                </div>
+                <!-- iOS 준비중 토스트 -->
+                <div class="ios-toast" id="iosToast">iOS 버전은 현재 준비중입니다 🙏</div>
+            </div>
+            <div class="hero-image">
+                <div class="phone-mockup-container">
+                    <div class="phone-mockup">
+                        <div class="phone-screen">
+                            <div class="phone-slides" id="phoneSlides">
+                                <!-- Main Screen -->
+                                <div class="phone-slide screen-main">
+                                    <div class="mock-header">
+                                        <span class="mock-logo">살았니?</span>
+                                        <div class="mock-settings"></div>
+                                    </div>
+                                    <div class="mock-character-area">
+                                        <svg class="mock-character" viewBox="0 0 100 120" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <ellipse cx="50" cy="25" rx="35" ry="8" fill="#343A40" opacity="0.9" />
+                                            <path d="M30 25 L35 10 L65 10 L70 25" fill="#343A40" opacity="0.9" />
+                                            <rect x="35" y="5" width="30" height="8" rx="2" fill="#343A40" />
+                                            <path
+                                                d="M25 45 C25 30 35 25 50 25 C65 25 75 30 75 45 L75 100 C75 100 70 95 65 100 C60 105 55 95 50 100 C45 105 40 95 35 100 C30 105 25 95 25 100 Z"
+                                                fill="#8B4557" />
+                                            <path d="M35 55 Q40 50 45 55" stroke="#ffffff" stroke-width="2.5"
+                                                fill="none" stroke-linecap="round" />
+                                            <path d="M55 55 Q60 50 65 55" stroke="#ffffff" stroke-width="2.5"
+                                                fill="none" stroke-linecap="round" />
+                                            <path d="M40 70 Q50 78 60 70" stroke="#ffffff" stroke-width="2.5"
+                                                fill="none" stroke-linecap="round" />
+                                            <circle cx="32" cy="62" r="5" fill="#FFB8B8" opacity="0.6" />
+                                            <circle cx="68" cy="62" r="5" fill="#FFB8B8" opacity="0.6" />
+                                        </svg>
+                                        <div class="mock-timer">23:45:12</div>
+                                        <p class="mock-status">오늘도 함께해주셔서 감사해요 ✨</p>
+                                        <div class="mock-button">살았니?</div>
+                                    </div>
+                                </div>
+                                <!-- Emergency Screen -->
+                                <div class="phone-slide screen-emergency">
+                                    <div class="mock-header">
+                                        <span class="mock-logo">살았니?</span>
+                                        <div class="mock-settings"></div>
+                                    </div>
+                                    <div class="mock-character-area">
+                                        <svg class="mock-character" viewBox="0 0 100 120" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <ellipse cx="50" cy="25" rx="35" ry="8" fill="#343A40" opacity="0.9" />
+                                            <path d="M30 25 L35 10 L65 10 L70 25" fill="#343A40" opacity="0.9" />
+                                            <rect x="35" y="5" width="30" height="8" rx="2" fill="#343A40" />
+                                            <path
+                                                d="M25 45 C25 30 35 25 50 25 C65 25 75 30 75 45 L75 100 C75 100 70 95 65 100 C60 105 55 95 50 100 C45 105 40 95 35 100 C30 105 25 95 25 100 Z"
+                                                fill="rgba(255,255,255,0.9)" />
+                                            <path d="M35 52 Q40 58 45 52" stroke="#FF6B6B" stroke-width="2.5"
+                                                fill="none" stroke-linecap="round" />
+                                            <path d="M55 52 Q60 58 65 52" stroke="#FF6B6B" stroke-width="2.5"
+                                                fill="none" stroke-linecap="round" />
+                                            <path d="M40 75 Q50 68 60 75" stroke="#FF6B6B" stroke-width="2.5"
+                                                fill="none" stroke-linecap="round" />
+                                        </svg>
+                                        <div class="mock-timer">00:00:00</div>
+                                        <p class="mock-status">보호자에게 구조 요청이 전송되었습니다!</p>
+                                        <div class="mock-button">긴급해제</div>
+                                        <p class="mock-subtext">저 살아있어요</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Slide Indicators -->
+                    <div class="phone-indicators">
+                        <div class="phone-indicator active" data-slide="0"></div>
+                        <div class="phone-indicator" data-slide="1"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Onboarding Preview Section -->
+    <section class="onboarding-preview">
+        <div class="container">
+            <h2 class="section-title">간단한 가입 절차</h2>
+            <p class="section-subtitle">3단계만 거치면 바로 시작할 수 있어요</p>
+
+            <div class="onboarding-screens">
+                <!-- Screen 1: Name Input -->
+                <div class="phone-mockup-small">
+                    <div class="onboarding-screen">
+                        <div class="onboarding-progress">
+                            <div class="onboarding-progress-bar" style="width: 33%"></div>
+                        </div>
+                        <span class="onboarding-step-text">1 / 3</span>
+                        <div class="onboarding-content">
+                            <svg class="onboarding-character" viewBox="0 0 100 120" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <ellipse cx="50" cy="25" rx="35" ry="8" fill="#343A40" opacity="0.9" />
+                                <path d="M30 25 L35 10 L65 10 L70 25" fill="#343A40" opacity="0.9" />
+                                <rect x="35" y="5" width="30" height="8" rx="2" fill="#343A40" />
+                                <path
+                                    d="M25 45 C25 30 35 25 50 25 C65 25 75 30 75 45 L75 100 C75 100 70 95 65 100 C60 105 55 95 50 100 C45 105 40 95 35 100 C30 105 25 95 25 100 Z"
+                                    fill="#8B4557" />
+                                <path d="M35 55 Q40 50 45 55" stroke="#fff" stroke-width="2.5" fill="none"
+                                    stroke-linecap="round" />
+                                <path d="M55 55 Q60 50 65 55" stroke="#fff" stroke-width="2.5" fill="none"
+                                    stroke-linecap="round" />
+                                <path d="M40 70 Q50 78 60 70" stroke="#fff" stroke-width="2.5" fill="none"
+                                    stroke-linecap="round" />
+                            </svg>
+                            <h3 class="onboarding-title">환영합니다! 👋</h3>
+                            <p class="onboarding-subtitle">긴급 알림에 표시될 이름을 입력해주세요.</p>
+                            <div class="onboarding-input">
+                                <label class="onboarding-input-label">이름</label>
+                                <div class="onboarding-input-field">홍길동</div>
+                            </div>
+                            <div class="onboarding-btn primary">다음</div>
+                        </div>
+                    </div>
+                    <p class="screen-label">닉네임 입력</p>
+                </div>
+
+                <!-- Screen 2: Guardian Info -->
+                <div class="phone-mockup-small">
+                    <div class="onboarding-screen">
+                        <div class="onboarding-progress">
+                            <div class="onboarding-progress-bar" style="width: 66%"></div>
+                        </div>
+                        <span class="onboarding-step-text">2 / 3</span>
+                        <div class="onboarding-content">
+                            <div class="guardian-header">
+                                <svg class="small-character" viewBox="0 0 100 120" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <ellipse cx="50" cy="25" rx="35" ry="8" fill="#343A40" opacity="0.9" />
+                                    <path d="M30 25 L35 10 L65 10 L70 25" fill="#343A40" opacity="0.9" />
+                                    <rect x="35" y="5" width="30" height="8" rx="2" fill="#343A40" />
+                                    <path
+                                        d="M25 45 C25 30 35 25 50 25 C65 25 75 30 75 45 L75 100 C75 100 70 95 65 100 C60 105 55 95 50 100 C45 105 40 95 35 100 C30 105 25 95 25 100 Z"
+                                        fill="#8B4557" />
+                                    <path d="M35 55 Q40 50 45 55" stroke="#fff" stroke-width="2.5" fill="none"
+                                        stroke-linecap="round" />
+                                    <path d="M55 55 Q60 50 65 55" stroke="#fff" stroke-width="2.5" fill="none"
+                                        stroke-linecap="round" />
+                                    <path d="M40 70 Q50 78 60 70" stroke="#fff" stroke-width="2.5" fill="none"
+                                        stroke-linecap="round" />
+                                </svg>
+                                <div class="guardian-header-text">
+                                    <h3>비상 연락처</h3>
+                                    <p>24시간 체크인이 없으면 연락드려요</p>
+                                </div>
+                            </div>
+                            <div class="onboarding-input">
+                                <label class="onboarding-input-label">보호자 이름</label>
+                                <div class="onboarding-input-field">엄마</div>
+                            </div>
+                            <div class="onboarding-input">
+                                <label class="onboarding-input-label">전화번호</label>
+                                <div class="onboarding-input-field">010-1234-5678</div>
+                            </div>
+                            <div class="info-box">
+                                <p><strong>안심하세요!</strong><br>연락처는 안전하게 암호화되어 저장됩니다.</p>
+                            </div>
+                            <div class="onboarding-btn primary">완료</div>
+                        </div>
+                    </div>
+                    <p class="screen-label">보호자 정보 입력</p>
+                </div>
+
+                <!-- Screen 3: Complete -->
+                <div class="phone-mockup-small">
+                    <div class="onboarding-screen" style="position: relative;">
+                        <!-- Confetti dots -->
+                        <div class="confetti-dot"
+                            style="background: #8B4557; left: 15%; top: 15%; animation-delay: 0s;"></div>
+                        <div class="confetti-dot"
+                            style="background: #FFB8B8; left: 30%; top: 20%; animation-delay: 0.2s;"></div>
+                        <div class="confetti-dot"
+                            style="background: #74C0FC; left: 70%; top: 18%; animation-delay: 0.4s;"></div>
+                        <div class="confetti-dot"
+                            style="background: #FFA94D; left: 85%; top: 22%; animation-delay: 0.6s;"></div>
+                        <div class="confetti-dot"
+                            style="background: #8B4557; left: 20%; top: 25%; animation-delay: 0.8s;"></div>
+                        <div class="confetti-dot"
+                            style="background: #FFB8B8; left: 80%; top: 28%; animation-delay: 1s;"></div>
+
+                        <div class="onboarding-progress">
+                            <div class="onboarding-progress-bar" style="width: 100%"></div>
+                        </div>
+                        <span class="onboarding-step-text">3 / 3</span>
+                        <div class="complete-content">
+                            <svg class="onboarding-character" viewBox="0 0 100 120" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <ellipse cx="50" cy="25" rx="35" ry="8" fill="#343A40" opacity="0.9" />
+                                <path d="M30 25 L35 10 L65 10 L70 25" fill="#343A40" opacity="0.9" />
+                                <rect x="35" y="5" width="30" height="8" rx="2" fill="#343A40" />
+                                <path
+                                    d="M25 45 C25 30 35 25 50 25 C65 25 75 30 75 45 L75 100 C75 100 70 95 65 100 C60 105 55 95 50 100 C45 105 40 95 35 100 C30 105 25 95 25 100 Z"
+                                    fill="#8B4557" />
+                                <path d="M35 55 Q40 50 45 55" stroke="#fff" stroke-width="2.5" fill="none"
+                                    stroke-linecap="round" />
+                                <path d="M55 55 Q60 50 65 55" stroke="#fff" stroke-width="2.5" fill="none"
+                                    stroke-linecap="round" />
+                                <path d="M40 70 Q50 78 60 70" stroke="#fff" stroke-width="2.5" fill="none"
+                                    stroke-linecap="round" />
+                            </svg>
+                            <h3 class="onboarding-title">준비 완료! 🎉</h3>
+                            <p class="onboarding-subtitle">이제부터 매일 한 번<br><span
+                                    style="color: #8B4557; font-weight: 600;">"살았니?"</span> 버튼을 눌러주세요</p>
+                            <div class="summary-card">
+                                <h4>설정 요약</h4>
+                                <div class="summary-row">
+                                    <span>체크인 주기</span>
+                                    <span>매일 (24시간)</span>
+                                </div>
+                                <div class="summary-row">
+                                    <span>알림 채널</span>
+                                    <span>카카오톡 → SMS</span>
+                                </div>
+                            </div>
+                            <div class="onboarding-btn primary">시작하기</div>
+                        </div>
+                    </div>
+                    <p class="screen-label">가입 완료</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">서비스 소개</h2>
+            <p class="section-subtitle">살았니(Alive)는 무엇인가요?</p>
+
+            <div class="about-content">
+                <div class="about-text">
+                    <p>
+                        <strong>살았니(Alive)</strong>는 1인 가구의 안전을 위한
+                        <em>디지털 데드맨 스위치</em> 서비스입니다.
+                    </p>
+                    <p>
+                        매일 한 번 "살았니?" 버튼을 누르면,
+                        당신이 안전하다는 것을 가족과 지인에게 알려줍니다.
+                        만약 24시간 동안 체크인이 없다면,
+                        등록된 보호자에게 자동으로 알림이 전송됩니다.
+                    </p>
+                </div>
+
+                <div class="value-cards">
+                    <div class="value-card">
+                        <div class="value-icon"></div>
+                        <h3>안심</h3>
+                        <p>혼자 있어도 누군가 지켜보고 있다는 안심감</p>
+                    </div>
+                    <div class="value-card">
+                        <div class="value-icon"></div>
+                        <h3>연결</h3>
+                        <p>가족과의 보이지 않는 든든한 연결고리</p>
+                    </div>
+                    <div class="value-card">
+                        <div class="value-icon"></div>
+                        <h3>간편</h3>
+                        <p>하루 한 번, 버튼 터치만으로 끝</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features">
+        <div class="container">
+            <h2 class="section-title">주요 기능</h2>
+            <p class="section-subtitle">살았니만의 특별한 기능들</p>
+
+            <div class="feature-grid">
+                <div class="feature-card">
+                    <div class="feature-icon"></div>
+                    <h3>24시간 생존 타이머</h3>
+                    <p>체크인 후 24시간 카운트다운이 시작됩니다. 시간이 지날수록 시각적으로 알려줍니다.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon"></div>
+                    <h3>원터치 체크인</h3>
+                    <p>"살았니?" 버튼 한 번으로 간편하게 생존 신고를 완료할 수 있습니다.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon"></div>
+                    <h3>보호자 자동 알림</h3>
+                    <p>24시간 미체크인 시 등록된 보호자에게 카카오톡 또는 문자로 알림이 전송됩니다.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon"></div>
+                    <h3>동지(K-Ghost) 캐릭터</h3>
+                    <p>귀여운 한국 전통 저승사자 캐릭터가 함께합니다. 상태에 따라 다양한 반응을 보여줍니다.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section id="how-it-works" class="how-it-works">
+        <div class="container">
+            <h2 class="section-title">사용 방법</h2>
+            <p class="section-subtitle">정말 간단합니다!</p>
+
+            <div class="steps">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <h3>앱 설치 & 가입</h3>
+                        <p>살았니 앱을 설치하고 간단한 정보와 보호자를 등록합니다.</p>
+                    </div>
+                </div>
+                <div class="step-arrow">→</div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <h3>매일 "살았니?" 터치</h3>
+                        <p>하루에 한 번, 앱을 열고 버튼을 터치하면 끝!</p>
+                    </div>
+                </div>
+                <div class="step-arrow">→</div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <h3>보호자에게 안심 알림</h3>
+                        <p>미체크인 시 보호자에게 자동 알림이 전송됩니다.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-brand">
+                <span class="footer-logo">
+                    <svg viewBox="0 0 100 120" fill="none" xmlns="http://www.w3.org/2000/svg" width="24" height="29"
+                        style="vertical-align: middle; margin-right: 6px;">
+                        <ellipse cx="50" cy="25" rx="35" ry="8" fill="#555" opacity="0.9" />
+                        <path d="M30 25 L35 10 L65 10 L70 25" fill="#555" opacity="0.9" />
+                        <rect x="35" y="5" width="30" height="8" rx="2" fill="#555" />
+                        <path
+                            d="M25 45 C25 30 35 25 50 25 C65 25 75 30 75 45 L75 100 C75 100 70 95 65 100 C60 105 55 95 50 100 C45 105 40 95 35 100 C30 105 25 95 25 100 Z"
+                            fill="#9ca3af" />
+                        <path d="M35 55 Q40 50 45 55" stroke="#ffffff" stroke-width="2.5" fill="none"
+                            stroke-linecap="round" />
+                        <path d="M55 55 Q60 50 65 55" stroke="#ffffff" stroke-width="2.5" fill="none"
+                            stroke-linecap="round" />
+                        <path d="M40 70 Q50 78 60 70" stroke="#ffffff" stroke-width="2.5" fill="none"
+                            stroke-linecap="round" />
+                    </svg>
+                    살았니(Alive)
+                </span>
+                <p class="footer-desc">1인 가구 안전 생존신고 서비스</p>
+            </div>
+
+            <div class="footer-info">
+                <p><strong>사업자명:</strong> (주)비티소프트</p>
+                <p><strong>대표자:</strong> 이준석</p>
+                <p><strong>사업자등록번호:</strong> 314-86-65298</p>
+                <p><strong>주소:</strong> 서울특별시 구로구 디지털로26길 43, R동 14층 1401호(구로동, 대륭포스트타워8차)</p>
+            </div>
+
+            <div class="footer-copyright">
+                <p>Copyright © 2026 (주)비티소프트. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
